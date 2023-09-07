@@ -24,10 +24,10 @@ public class HerenciaExtra3_Turismo {
         Hotel4Service hot4S = new Hotel4Service();
         Hotel5Service hot5S = new Hotel5Service();
 
-        Hotel4 hot4 = new Hotel4("A", "xx", 44, 8, 12, 4, 1020, "Maxi", "ll", "kjhh", "Carme");
-        Hotel5 hot5 = new Hotel5(6, 4, 7, "A", "xx", 44, 8, 12, 4, 365, "MM", "ll", "kjhh", "Carme");
-        Hotel4 hot44 = new Hotel4("A", "xx", 44, 8, 12, 4, 145, "LL", "ll", "kjhh", "Carme");
-        Hotel5 hot55 = new Hotel5(6, 4, 7, "A", "xx", 44, 8, 12, 4, 65, "XXi", "ll", "kjhh", "Carme");
+        Hotel4 hot4 = new Hotel4("A", "xx", 44, 8, 12, 4, 1020, "Hotel4_1", "ll", "kjhh", "Carme");
+        Hotel5 hot5 = new Hotel5(6, 4, 7, "A", "xx", 44, 8, 12, 4, 365, "Hotel5_1", "ll", "kjhh", "Carme");
+        Hotel4 hot44 = new Hotel4("B", "xx", 44, 8, 12, 4, 145, "Hotel4_2", "ll", "kjhh", "Carme");
+        Hotel5 hot55 = new Hotel5(6, 4, 7, "B", "xx", 44, 8, 12, 4, 65, "Hotel5_2", "ll", "kjhh", "Carme");
 
         listadoHoteles.add(hot4);
         listadoHoteles.add(hot5);
@@ -43,10 +43,10 @@ public class HerenciaExtra3_Turismo {
         System.out.println(hot44.toString());
         System.out.println(hot55.toString());
 
-        Camping camp1 = new Camping(40, 6, true, false, 300, "PP", "dfgg", "pdkd", "jshhs");
-        Camping camp2 = new Camping(60, 6, false, true, 300, "PRE", "jjjg", "pdkd", "jshhs");
-        Residencia resi1 = new Residencia(4, true, false, true, 150, "res", "dddn", "jdjdjd", "jdsshs");
-        Residencia resi2 = new Residencia(4, false, true, false, 150, "res2", "dddn", "jdjdjd", "jdsshs");
+        Camping camp1 = new Camping(40, 6, true, false, 300, "Camp1", "dfgg", "pdkd", "jshhs");
+        Camping camp2 = new Camping(60, 6, false, true, 300, "Camp2", "jjjg", "pdkd", "jshhs");
+        Residencia resi1 = new Residencia(4, true, false, true, 150, "Resi1", "dddn", "jdjdjd", "jdsshs");
+        Residencia resi2 = new Residencia(4, false, true, false, 150, "Resi2", "dddn", "jdjdjd", "jdsshs");
         
         listadoAlojamientos.add(camp1);
         listadoAlojamientos.add(camp2);
@@ -87,19 +87,19 @@ public class HerenciaExtra3_Turismo {
 //
 //        }
 //
-        System.out.println("MENU");
+        System.out.println("\n MENU \n");
 
         int opcionMenu = 0;
 
         do {
 
-            System.out.println("Que desea realizar?");
+            System.out.println("Que desea realizar? \n");
 
             System.out.println("1. Ver todos los alojamientos \n"
                     + "2. Ver todos los hoteles, de más caro a más barato \n"
                     + "3. Ver todos los campings con restaurante \n"
                     + "4. Ver todos las residencias que tienen descuento \n"
-                    + "5. Salir");
+                    + "5. Salir \n");
             opcionMenu = sc.nextInt();
 
             switch (opcionMenu) {
@@ -122,7 +122,7 @@ public class HerenciaExtra3_Turismo {
                     for (Turismo alojamiento : listadoAlojamientos) {
                         if (alojamiento instanceof  Camping)  {
                             if (((Camping) alojamiento).getPoseeResto()) {
-                                System.out.println("Los campings que tienen resto: " + alojamiento.getNombre());
+                                System.out.println("Los campings que tienen resto: " + alojamiento.getNombre() + "\n");
                             }
                         }
                     }
@@ -130,17 +130,17 @@ public class HerenciaExtra3_Turismo {
                 case 4:
 for (Turismo alojamiento : listadoAlojamientos) {
     if (alojamiento instanceof  Residencia && ((Residencia) alojamiento).getDescuentosGremios()) {
-        System.out.println("Las residencias que hacen descuentos a gremios son: " + alojamiento.getNombre());
+        System.out.println("Las residencias que hacen descuentos a gremios son: " + alojamiento.getNombre() + "\n");
     }
 }
                     break;
                 case 5:
-                    System.out.println("Gracias por visitar nuestra compañía");
+                    System.out.println("Gracias por visitar nuestra compañía  \n");
                     System.exit(0);
                     break;
 
                 default:
-                    System.out.println("Ingrese una opción correcta, por favor");
+                    System.out.println("Ingrese una opción correcta, por favor  \n");
             }
 
         } while (opcionMenu != 5);

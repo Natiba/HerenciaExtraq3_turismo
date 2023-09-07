@@ -119,12 +119,12 @@ public class Hotel4 extends Hotel {
 
     @Override
     public String toString() {
-        return "Hotel4 {\n " + "\n Nombre: " + this.nombre + "\n Dirección: " + this.direccion + "\n"
+        return " Hotel4 {" + "\n Nombre: " + this.nombre + "\n Dirección: " + this.direccion + "\n"
                 + " Localidad: " + this.localidad + "\n Encargado: " + this.encargado+ "\n"
                 + " Cantidad de Habitaciones: " + cantHabitaciones + "\n Número de Camas: " + numDeCamas + "\n"
                 + " Cantidad de Pisos: " + cantPisos + "\n Precio de Habitaciones: " + precioHabitacion+ "\n"
                 + " Gimnasio: " + gimnasio + "\n Nombre del Restaurante: " + nombreRestaurante + "\n"
-                + "Capacidad del Restaurante: " + capacidadResto + "\n}";
+                + " Capacidad del Restaurante: " + capacidadResto + "\n}\n";
     }
     
 }

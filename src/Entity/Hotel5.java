@@ -126,15 +126,15 @@ public final class Hotel5 extends Hotel4 {
 
     @Override
     public String toString() {
-        return "Hotel5 {\n " + "\n Nombre: " + this.nombre + "\n Dirección: " + this.direccion + "\n"
+        return " Hotel5 { " + "\n Nombre: " + this.nombre + "\n Dirección: " + this.direccion + "\n"
                 + " Localidad: " + this.localidad + "\n Encargado: " + this.encargado + "\n"
                 + " Cantidad de Habitaciones: " + cantHabitaciones + "\n Número de Camas: " + numDeCamas + "\n"
                 + " Cantidad de Pisos: " + cantPisos + "\n Precio de Habitaciones: " + precioHabitacion + "\n"
                 + " Gimnasio: " + this.gimnasio + "\n Nombre del Restaurante: " + this.nombreRestaurante + "\n"
-                + "Capacidad del Restaurante: " + capacidadResto + "\n"
-                + "Cantidad de Salones de Conferencia: " + cantSalonesConferencia + "\n"
-                + "Cantidad de Suites: " + cantSuites + "\n Cantidad de Limosinas: " + cantLimosinas + "\n"
-                + "}";
+                + " Capacidad del Restaurante: " + capacidadResto + "\n"
+                + " Cantidad de Salones de Conferencia: " + cantSalonesConferencia + "\n"
+                + " Cantidad de Suites: " + cantSuites + "\n Cantidad de Limosinas: " + cantLimosinas + "\n"
+                + "}\n";
     }
 
 }

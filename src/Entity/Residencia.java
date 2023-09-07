@@ -103,11 +103,11 @@ public class Residencia extends Alojamiento {
 
     @Override
     public String toString() {
-        return "Residencia {" + "\n Nombre: " + nombre + "\n Dirección: " + direccion + "\n "
+        return " Residencia {" + "\n Nombre: " + nombre + "\n Dirección: " + direccion + "\n "
 + "Localidad: " + localidad + "\n Encargado: " + encargado+ "\n"
                 + " Cantidad de Habitaciones: " + cantHabitaciones + "\n"
                 + " Descuentos a los Gremios: " + descuentosGremios + "\n"
-                + " Posee Campo Deportivo? " + campoDeportivo + "\n}";
+                + " Posee Campo Deportivo? " + campoDeportivo + "\n}\n";
     }
 
 }

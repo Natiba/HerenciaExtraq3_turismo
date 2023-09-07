@@ -103,10 +103,10 @@ public class Camping extends Alojamiento {
     
     @Override
     public String toString() {
-        return "Camping {" + "\n Nombre: " + nombre + "\n Dirección: " + direccion + "\n "
+        return " Camping {" + "\n Nombre: " + nombre + "\n Dirección: " + direccion + "\n "
 + "Localidad: " + localidad + "\n Encargado: " + encargado + "\n Maximo de Carpas: " + maxCarpas + "\n "
-+ "Cantidad de Baños=" + cantBanios + "\n"
-                + " Posee Resto? " + poseeResto + "\n}";
++ "Cantidad de Baños: " + cantBanios + "\n"
+                + " Posee Resto? " + poseeResto + "\n}\n";
     }
    
 }
